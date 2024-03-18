@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS para efecto hover en las imágenes -->
+<style>
+  .carousel-item:hover {
+      transform: scale(1.05);
+      transition: transform 0.5s ease;
+      cursor: pointer;
+  }
+</style>
   </head>
   <body>
 	  <div class="py-2 bg-primary">
@@ -85,19 +93,19 @@
 		<section class="ftco-section">
     	<div class="container">
     		<div class="row">
-        	<div class="col-md-6 col-lg-3 ftco-animate">
-        		<div class="pricing-entry bg-light pb-4 text-center">
-        			<div>
-	        			<h3 class="mb-3">Uniformes</h3>
-	        			<p><span class="price">IESPA</span></p>
-	        		</div>
-	        		<div class="img" style="background-image: url(images/bg_1.jpg);"></div>
-	        		<div class="px-4">
-	        			<p>Descubre la esencia de nuestra identidad. En esta sección, detalles completos sobre los uniformes escolares que nos distinguen.</p>
-        			</div>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Ver detalle</a></p>
-        		</div>
-        	</div>
+          <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="pricing-entry bg-light pb-4 text-center">
+                <div>
+                    <h3 class="mb-3">Uniformes</h3>
+                    <p><span class="price">IESPA</span></p>
+                </div>
+                <div class="img" style="background-image: url(images/bg_1.jpg);"></div>
+                <div class="px-4">
+                    <p>Descubre la esencia de nuestra identidad. En esta sección, detalles completos sobre los uniformes escolares que nos distinguen.</p>
+                </div>
+                <p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3" data-toggle="modal" data-target="#detalleModal">Ver detalle</a></p>
+            </div>
+        </div>
         	<div class="col-md-6 col-lg-3 ftco-animate">
         		<div class="pricing-entry bg-light pb-4 text-center">
         			<div>
@@ -140,6 +148,162 @@
         </div>
     	</div>
     </section>
+
+<!-- Modal -->
+<div class="modal fade" id="detalleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Uniformes IESPA 2024</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <!-- Card 1 -->
+                  <div class="col-md-6 mb-4">
+                      <div class="card border-0 shadow">
+                          <img src="images/uniforme1.png" class="card-img-top" alt="Uniforme 1" style="width: 250px; height: 350px;">
+                          <div class="card-body">
+                              <h5 class="card-title">Uniforme Diario</h5>
+                              <ul class="list-unstyled">
+                                  <li>1. Camiseta Blanca</li>
+                                  <li>2. Pantalon Azul</li>
+                                  <li>3. Tenis Blancos</li>
+                                  <!-- Agrega más puntos si es necesario -->
+                              </ul>
+                                                              <!-- Acordeón -->
+                                                              <div id="accordion1">
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingOne">
+                                                                        <h5 class="mb-0">
+                                                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                                Elementos
+                                                                            </button>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+                                                                        <div class="card-body">
+                                                                            Contenido del acordeón item 1.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingTwo">
+                                                                        <h5 class="mb-0">
+                                                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                                Donde Comprar?
+                                                                            </button>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                                                                        <div class="card-body">
+                                                                            Contenido del acordeón item 2.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card">
+                                                                    <div class="card-header" id="headingThree">
+                                                                        <h5 class="mb-0">
+                                                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                                Contacto
+                                                                            </button>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                                                                        <div class="card-body">
+                                                                            Contenido del acordeón item 3.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Final del acordeón -->
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="images/uniforme2.png" class="card-img-top" alt="Uniforme 1" style="width: 250px; height: 350px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Uniforme Deporte</h5>
+                            <ul class="list-unstyled">
+                                <li>1. Camiseta Blanca</li>
+                                <li>2. Pantalon Verde</li>
+                                <li>3. Tenis Blancos</li>
+                                <!-- Agrega más puntos si es necesario -->
+                            </ul>
+                                                            <!-- Acordeón -->
+                                                            <div id="accordion1">
+                                                              <div class="card">
+                                                                  <div class="card-header" id="headingOne">
+                                                                      <h5 class="mb-0">
+                                                                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                              Elementos
+                                                                          </button>
+                                                                      </h5>
+                                                                  </div>
+                                                                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+                                                                      <div class="card-body">
+                                                                          Contenido del acordeón item 1.
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="card">
+                                                                  <div class="card-header" id="headingTwo">
+                                                                      <h5 class="mb-0">
+                                                                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                              Donde Comprar?
+                                                                          </button>
+                                                                      </h5>
+                                                                  </div>
+                                                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+                                                                      <div class="card-body">
+                                                                          Contenido del acordeón item 2.
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="card">
+                                                                  <div class="card-header" id="headingThree">
+                                                                      <h5 class="mb-0">
+                                                                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                              Contacto
+                                                                          </button>
+                                                                      </h5>
+                                                                  </div>
+                                                                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+                                                                      <div class="card-body">
+                                                                          Contenido del acordeón item 3.
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <!-- Final del acordeón -->
+                        </div>
+                    </div>
+                </div>
+                  <!-- Agrega más cards si es necesario -->
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- CSS para efecto hover en las cards -->
+<style>
+  .card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+  }
+</style>
+
+
+
+
 
 		
     <footer class="ftco-footer ftco-bg-dark ftco-section">

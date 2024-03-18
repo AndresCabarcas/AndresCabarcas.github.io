@@ -55,6 +55,11 @@
 			border: 1px solid #22ca9d;
 			border-radius: 5px;
 		}
+
+		.highlighted-day {
+      background-color: lightblue;
+	  cursor: pointer; /* Cambiar el cursor al pasar sobre el día */
+    }
 	</style>
 
 </head>
@@ -127,92 +132,325 @@
 
 	<section class="ftco-section ftco-no-pt ftc-no-pb">
 		<div class="container">
-			<div class="col-md-20 order-md-last wrap-about py-5 wrap-about bg-light">
-				<div class="text px-4 ftco-animate">
-					<h2 class="mb-4">Horario Escolar</h2>
-					<div class="card">
-						<div class="card-header grade-header" data-toggle="collapse" data-target="#preescolar">
-							<h3>Educación Preescolar</h3>
-						</div>
-						<div class="collapse grade-body" id="preescolar">
-							<div class="class-schedule">
-								<h5>Preescolar 3 años</h5>
-								<p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
+			<h1>Calendario Academico</h1>
+			<!-- Nuevo acordeón -->
+			<div id="accordion2" class="mt-4">
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour"
+								aria-expanded="true" aria-controls="collapseFour">
+								2024
+							</button>
+						</h5>
+					</div>
+					<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion2">
+						<div class="card-body">
+							<!-- Sub-acordeón -->
+							<div id="subAccordion1">
+								<div class="card">
+									<div class="card-header" id="subHeadingOne">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse"
+												data-target="#subCollapseOne" aria-expanded="true"
+												aria-controls="subCollapseOne">
+												Enero - Abril
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseOne" class="collapse" aria-labelledby="subHeadingOne"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<div class="container mt-5">
+												<div class="row justify-content-center">
+												  <div class="col-md-6">
+													<table class="table table-bordered">
+													  <thead>
+														<tr>
+														  <th colspan="7" class="text-center">Febrero</th>
+														</tr>
+														<tr>
+														  <th class="text-center">Dom</th>
+														  <th class="text-center">Lun</th>
+														  <th class="text-center">Mar</th>
+														  <th class="text-center">Mié</th>
+														  <th class="text-center">Jue</th>
+														  <th class="text-center">Vie</th>
+														  <th class="text-center">Sáb</th>
+														</tr>
+													  </thead>
+													  <tbody>
+														<tr>
+														  <td></td>
+														  <td></td>
+														  <td></td>
+														  <td></td>
+														  <td></td>
+														  <td>1</td>
+														  <td>2</td>
+														</tr>
+														<tr>
+														  <td>3</td>
+														  <td>4</td>
+														  <td>5</td>
+														  <td>6</td>
+														  <td class="highlighted-day" data-toggle="tooltip" title="Día del Maestro" onclick="mostrarMensaje()">7</td>
+														  <td>8</td>
+														  <td>9</td>
+														</tr>
+														<tr>
+														  <td>10</td>
+														  <td>11</td>
+														  <td>12</td>
+														  <td>13</td>
+														  <td>14</td>
+														  <td>15</td>
+														  <td>16</td>
+														</tr>
+														<tr>
+														  <td>17</td>
+														  <td>18</td>
+														  <td>19</td>
+														  <td>20</td>
+														  <td>21</td>
+														  <td>22</td>
+														  <td>23</td>
+														</tr>
+														<tr>
+														  <td>24</td>
+														  <td>25</td>
+														  <td>26</td>
+														  <td>27</td>
+														  <td>28</td>
+														  <td></td>
+														  <td></td>
+														</tr>
+													  </tbody>
+													</table>
+													<table class="table table-bordered mt-5">
+														<thead>
+														  <tr>
+															<th colspan="7" class="text-center">Febrero</th>
+														  </tr>
+														  <tr>
+															<th class="text-center">Dom</th>
+															<th class="text-center">Lun</th>
+															<th class="text-center">Mar</th>
+															<th class="text-center">Mié</th>
+															<th class="text-center">Jue</th>
+															<th class="text-center">Vie</th>
+															<th class="text-center">Sáb</th>
+														  </tr>
+														</thead>
+														<tbody>
+														  <tr>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>1</td>
+															<td>2</td>
+														  </tr>
+														  <tr>
+															<td>3</td>
+															<td>4</td>
+															<td>5</td>
+															<td>6</td>
+															<td>7</td>
+															<td>8</td>
+															<td>9</td>
+														  </tr>
+														  <tr>
+															<td>10</td>
+															<td>11</td>
+															<td>12</td>
+															<td>13</td>
+															<td>14</td>
+															<td>15</td>
+															<td>16</td>
+														  </tr>
+														  <tr>
+															<td>17</td>
+															<td>18</td>
+															<td>19</td>
+															<td>20</td>
+															<td>21</td>
+															<td>22</td>
+															<td>23</td>
+														  </tr>
+														  <tr>
+															<td>24</td>
+															<td>25</td>
+															<td>26</td>
+															<td>27</td>
+															<td>28</td>
+															<td></td>
+															<td></td>
+														  </tr>
+														</tbody>
+													  </table>
+												  </div>
+												</div>
+											  </div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="subHeadingTwo">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse"
+												data-target="#subCollapseTwo" aria-expanded="false"
+												aria-controls="subCollapseTwo">
+												Mayo - Julio
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseTwo" class="collapse" aria-labelledby="subHeadingTwo"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<div class="container mt-5">
+												<div class="row justify-content-center">
+												  <div class="col-md-6">
+													<table class="table table-bordered">
+													  <thead>
+														<tr>
+														  <th colspan="7" class="text-center">Febrero</th>
+														</tr>
+														<tr>
+														  <th class="text-center">Dom</th>
+														  <th class="text-center">Lun</th>
+														  <th class="text-center">Mar</th>
+														  <th class="text-center">Mié</th>
+														  <th class="text-center">Jue</th>
+														  <th class="text-center">Vie</th>
+														  <th class="text-center">Sáb</th>
+														</tr>
+													  </thead>
+													  <tbody>
+														<tr>
+														  <td></td>
+														  <td></td>
+														  <td></td>
+														  <td></td>
+														  <td></td>
+														  <td>1</td>
+														  <td>2</td>
+														</tr>
+														<tr>
+														  <td>3</td>
+														  <td>4</td>
+														  <td>5</td>
+														  <td>6</td>
+														  <td class="highlighted-day" data-toggle="tooltip" title="Día del Maestro" onclick="mostrarMensaje()">7</td>
+														  <td>8</td>
+														  <td>9</td>
+														</tr>
+														<tr>
+														  <td>10</td>
+														  <td>11</td>
+														  <td>12</td>
+														  <td>13</td>
+														  <td>14</td>
+														  <td>15</td>
+														  <td>16</td>
+														</tr>
+														<tr>
+														  <td>17</td>
+														  <td>18</td>
+														  <td>19</td>
+														  <td>20</td>
+														  <td>21</td>
+														  <td>22</td>
+														  <td>23</td>
+														</tr>
+														<tr>
+														  <td>24</td>
+														  <td>25</td>
+														  <td>26</td>
+														  <td>27</td>
+														  <td>28</td>
+														  <td></td>
+														  <td></td>
+														</tr>
+													  </tbody>
+													</table>
+													<table class="table table-bordered mt-5">
+														<thead>
+														  <tr>
+															<th colspan="7" class="text-center">Febrero</th>
+														  </tr>
+														  <tr>
+															<th class="text-center">Dom</th>
+															<th class="text-center">Lun</th>
+															<th class="text-center">Mar</th>
+															<th class="text-center">Mié</th>
+															<th class="text-center">Jue</th>
+															<th class="text-center">Vie</th>
+															<th class="text-center">Sáb</th>
+														  </tr>
+														</thead>
+														<tbody>
+														  <tr>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td></td>
+															<td>1</td>
+															<td>2</td>
+														  </tr>
+														  <tr>
+															<td>3</td>
+															<td>4</td>
+															<td>5</td>
+															<td>6</td>
+															<td>7</td>
+															<td>8</td>
+															<td>9</td>
+														  </tr>
+														  <tr>
+															<td>10</td>
+															<td>11</td>
+															<td>12</td>
+															<td>13</td>
+															<td>14</td>
+															<td>15</td>
+															<td>16</td>
+														  </tr>
+														  <tr>
+															<td>17</td>
+															<td>18</td>
+															<td>19</td>
+															<td>20</td>
+															<td>21</td>
+															<td>22</td>
+															<td>23</td>
+														  </tr>
+														  <tr>
+															<td>24</td>
+															<td>25</td>
+															<td>26</td>
+															<td>27</td>
+															<td>28</td>
+															<td></td>
+															<td></td>
+														  </tr>
+														</tbody>
+													  </table>
+												  </div>
+												</div>
+											  </div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="class-schedule">
-								<h5>Preescolar 4 años</h5>
-								<p>Lunes a Viernes: 8:30 AM - 11:30 AM</p>
-							</div>
-							<div class="class-schedule">
-								<h5>Preescolar 5 años</h5>
-								<p>Lunes a Viernes: 8:00 AM - 12:30 PM</p>
-							</div>
+							<!-- Fin del Sub-acordeón -->
 						</div>
 					</div>
-					<div class="card">
-						<div class="card-header grade-header" data-toggle="collapse" data-target="#primaria">
-							<h3>Educación Primaria</h3>
-						</div>
-						<div class="collapse grade-body" id="primaria">
-							<div class="card bg-primary">
-								<div class="card-header grade-header" data-toggle="collapse" data-target="#primero">
-									<h3>Grado Primero</h3>
-								</div>
-								<div class="collapse grade-body" id="primero">
-									<div class="class-schedule">
-										<h5>Preescolar 3 años</h5>
-										<p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
-									</div>
-									<div class="class-schedule">
-										<h5>Preescolar 4 años</h5>
-										<p>Lunes a Viernes: 8:30 AM - 11:30 AM</p>
-									</div>
-									<div class="class-schedule">
-										<h5>Preescolar 5 años</h5>
-										<p>Lunes a Viernes: 8:00 AM - 12:30 PM</p>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-primary">
-								<div class="card-header grade-header" data-toggle="collapse" data-target="#Segundo">
-									<h3>Grado Segundo</h3>
-								</div>
-								<div class="collapse grade-body" id="Segundo">
-									<div class="class-schedule">
-										<h5>Preescolar 3 años</h5>
-										<p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
-									</div>
-									<div class="class-schedule">
-										<h5>Preescolar 4 años</h5>
-										<p>Lunes a Viernes: 8:30 AM - 11:30 AM</p>
-									</div>
-									<div class="class-schedule">
-										<h5>Preescolar 5 años</h5>
-										<p>Lunes a Viernes: 8:00 AM - 12:30 PM</p>
-									</div>
-								</div>
-							</div>
-							<div class="card bg-primary">
-								<div class="card-header grade-header" data-toggle="collapse" data-target="#Tercero">
-									<h3>Grado Tercero</h3>
-								</div>
-								<div class="collapse grade-body" id="Tercero">
-									<div class="class-schedule">
-										<h5>Preescolar 3 años</h5>
-										<p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
-									</div>
-									<div class="class-schedule">
-										<h5>Preescolar 4 años</h5>
-										<p>Lunes a Viernes: 8:30 AM - 11:30 AM</p>
-									</div>
-									<div class="class-schedule">
-										<h5>Preescolar 5 años</h5>
-										<p>Lunes a Viernes: 8:00 AM - 12:30 PM</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				</div>
+				<div class="card">
+					<!-- Repite la estructura para los demás items del acordeón -->
 				</div>
 			</div>
 		</div>
@@ -221,52 +459,515 @@
 
 	<section class="ftco-section ftco-no-pt ftc-no-pb">
 		<div class="container">
-			<div class="col-md-20 order-md-last wrap-about py-5 wrap-about bg-light">
-				<div class="text px-4 ftco-animate">
-					<h2 class="mb-4">Calendario Academico</h2>
-					<div class="card">
-						<div class="card-header grade-header" data-toggle="collapse" data-target="#enero-marzo">
-							<h3>Enero - Marzo</h3>
-						</div>
-						<div class="collapse grade-body" id="enero-marzo">
-							<div class="class-schedule">
-								<h5>Preescolar 3 años</h5>
-								<p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
+			<!-- Nuevo acordeón -->
+			<h1>Horario Academico</h1>
+			<div id="accordion2" class="mt-4">
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapseprimaria"
+								aria-expanded="true" aria-controls="collapseprimaria">
+								Primaria
+							</button>
+						</h5>
+					</div>
+					<div id="collapseprimaria" class="collapse" aria-labelledby="headingFour" data-parent="#accordion2">
+						<div class="card-body">
+							<!-- Sub-acordeón -->
+							<div id="subAccordion1">
+								<div class="card">
+									<div class="card-header" id="subHeadingOne">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse"
+												data-target="#subCollapseOne" aria-expanded="true"
+												aria-controls="subCollapseOne">
+												Grado primero 1°
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseOne" class="collapse" aria-labelledby="subHeadingOne"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<table class="table table-striped table-bordered">
+												<tr>
+													<td></td>
+													<td>Lu</td>
+													<td>Ma</td>
+													<td>Mi</td>
+													<td>Ju</td>
+													<td>Vi</td>
+												</tr>
+												<tr>
+													<td>1<br />7:00 - 7:55</td>
+													<td>Etica - Rel 6</td>
+													<td>Ed. Fisca 6</td>
+													<td>Sociales 6</td>
+													<td>Artistica 6</td>
+													<td>Lectura</td>
+												</tr>
+												<tr>
+													<td>2<br />7:55 - 8:50</td>
+													<td>Lenguaje 6</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+													<td>Lenguaje 6</td>
+													<td>Lenguaje 6</td>
+												</tr>
+												<tr>
+													<td>3<br />8:50 - 9:45</td>
+													<td>Sociales 6</td>
+													<td>Matematicas 6</td>
+													<td>Lectura</td>
+													<td>Biologia 6</td>
+													<td>Matematicas 6</td>
+												</tr>
+												<tr>
+													<td>R<br />9:45 - 10:15</td>
+													<td></td>
+													<td></td>
+													<td>Descanso</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4<br />10:15 - 11:10</td>
+													<td>Matematicas 6</td>
+													<td>Biologia 6</td>
+													<td>Lectura</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+												</tr>
+												<tr>
+													<td>5<br />11:10 - 12:05</td>
+													<td>Lectura</td>
+													<td>Lectura</td>
+													<td>Lenguaje 6</td>
+													<td>Matematicas 6</td>
+													<td>Ed. Fisca 6</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="subHeadingTwo">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse"
+												data-target="#subCollapseTwo" aria-expanded="false"
+												aria-controls="subCollapseTwo">
+												Grado segundo 2°
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseTwo" class="collapse" aria-labelledby="subHeadingTwo"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<table class="table table-striped table-bordered">
+												<tr>
+													<td></td>
+													<td>Lu</td>
+													<td>Ma</td>
+													<td>Mi</td>
+													<td>Ju</td>
+													<td>Vi</td>
+												</tr>
+												<tr>
+													<td>1<br />7:00 - 7:55</td>
+													<td>Etica - Rel 6</td>
+													<td>Ed. Fisca 6</td>
+													<td>Sociales 6</td>
+													<td>Artistica 6</td>
+													<td>Lectura</td>
+												</tr>
+												<tr>
+													<td>2<br />7:55 - 8:50</td>
+													<td>Lenguaje 6</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+													<td>Lenguaje 6</td>
+													<td>Lenguaje 6</td>
+												</tr>
+												<tr>
+													<td>3<br />8:50 - 9:45</td>
+													<td>Sociales 6</td>
+													<td>Matematicas 6</td>
+													<td>Lectura</td>
+													<td>Biologia 6</td>
+													<td>Matematicas 6</td>
+												</tr>
+												<tr>
+													<td>R<br />9:45 - 10:15</td>
+													<td></td>
+													<td></td>
+													<td>Descanso</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4<br />10:15 - 11:10</td>
+													<td>Matematicas 6</td>
+													<td>Biologia 6</td>
+													<td>Lectura</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+												</tr>
+												<tr>
+													<td>5<br />11:10 - 12:05</td>
+													<td>Lectura</td>
+													<td>Lectura</td>
+													<td>Lenguaje 6</td>
+													<td>Matematicas 6</td>
+													<td>Ed. Fisca 6</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="class-schedule">
-								<h5>Preescolar 4 años</h5>
-								<p>Lunes a Viernes: 8:30 AM - 11:30 AM</p>
-							</div>
-							<div class="class-schedule">
-								<h5>Preescolar 5 años</h5>
-								<p>Lunes a Viernes: 8:00 AM - 12:30 PM</p>
-							</div>
+							<!-- Fin del Sub-acordeón -->
 						</div>
 					</div>
-					<div class="card">
-						<div class="card-header grade-header" data-toggle="collapse" data-target="#abril-junio">
-							<h3>Abril - Junio</h3>
-						</div>
-						<div class="collapse grade-body" id="abril-junio">
-							<div class="class-schedule">
-								<h5>Preescolar 3 años</h5>
-								<p>Lunes a Viernes: 9:00 AM - 12:00 PM</p>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapsesecundaria"
+								aria-expanded="true" aria-controls="collapsesecundaria">
+								Secundaria
+							</button>
+						</h5>
+					</div>
+					<div id="collapsesecundaria" class="collapse" aria-labelledby="headingFour" data-parent="#accordion2">
+						<div class="card-body">
+							<!-- Sub-acordeón -->
+							<div id="subAccordion1">
+								<div class="card">
+									<div class="card-header" id="subHeadingOne">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse"
+												data-target="#subCollapseOne" aria-expanded="true"
+												aria-controls="subCollapseOne">
+												Grado Quinto 5°
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseOne" class="collapse" aria-labelledby="subHeadingOne"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<table class="table table-striped table-bordered">
+												<tr>
+													<td></td>
+													<td>Lu</td>
+													<td>Ma</td>
+													<td>Mi</td>
+													<td>Ju</td>
+													<td>Vi</td>
+												</tr>
+												<tr>
+													<td>1<br />7:00 - 7:55</td>
+													<td>Etica - Rel 6</td>
+													<td>Ed. Fisca 6</td>
+													<td>Sociales 6</td>
+													<td>Artistica 6</td>
+													<td>Lectura</td>
+												</tr>
+												<tr>
+													<td>2<br />7:55 - 8:50</td>
+													<td>Lenguaje 6</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+													<td>Lenguaje 6</td>
+													<td>Lenguaje 6</td>
+												</tr>
+												<tr>
+													<td>3<br />8:50 - 9:45</td>
+													<td>Sociales 6</td>
+													<td>Matematicas 6</td>
+													<td>Lectura</td>
+													<td>Biologia 6</td>
+													<td>Matematicas 6</td>
+												</tr>
+												<tr>
+													<td>R<br />9:45 - 10:15</td>
+													<td></td>
+													<td></td>
+													<td>Descanso</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4<br />10:15 - 11:10</td>
+													<td>Matematicas 6</td>
+													<td>Biologia 6</td>
+													<td>Lectura</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+												</tr>
+												<tr>
+													<td>5<br />11:10 - 12:05</td>
+													<td>Lectura</td>
+													<td>Lectura</td>
+													<td>Lenguaje 6</td>
+													<td>Matematicas 6</td>
+													<td>Ed. Fisca 6</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="subHeadingTwo">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse"
+												data-target="#subCollapseTwo" aria-expanded="false"
+												aria-controls="subCollapseTwo">
+												Grado Sexto 6°
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseTwo" class="collapse" aria-labelledby="subHeadingTwo"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<table class="table table-striped table-bordered">
+												<tr>
+													<td></td>
+													<td>Lu</td>
+													<td>Ma</td>
+													<td>Mi</td>
+													<td>Ju</td>
+													<td>Vi</td>
+												</tr>
+												<tr>
+													<td>1<br />7:00 - 7:55</td>
+													<td>Etica - Rel 6</td>
+													<td>Ed. Fisca 6</td>
+													<td>Sociales 6</td>
+													<td>Artistica 6</td>
+													<td>Lectura</td>
+												</tr>
+												<tr>
+													<td>2<br />7:55 - 8:50</td>
+													<td>Lenguaje 6</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+													<td>Lenguaje 6</td>
+													<td>Lenguaje 6</td>
+												</tr>
+												<tr>
+													<td>3<br />8:50 - 9:45</td>
+													<td>Sociales 6</td>
+													<td>Matematicas 6</td>
+													<td>Lectura</td>
+													<td>Biologia 6</td>
+													<td>Matematicas 6</td>
+												</tr>
+												<tr>
+													<td>R<br />9:45 - 10:15</td>
+													<td></td>
+													<td></td>
+													<td>Descanso</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4<br />10:15 - 11:10</td>
+													<td>Matematicas 6</td>
+													<td>Biologia 6</td>
+													<td>Lectura</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+												</tr>
+												<tr>
+													<td>5<br />11:10 - 12:05</td>
+													<td>Lectura</td>
+													<td>Lectura</td>
+													<td>Lenguaje 6</td>
+													<td>Matematicas 6</td>
+													<td>Ed. Fisca 6</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="class-schedule">
-								<h5>Preescolar 4 años</h5>
-								<p>Lunes a Viernes: 8:30 AM - 11:30 AM</p>
-							</div>
-							<div class="class-schedule">
-								<h5>Preescolar 5 años</h5>
-								<p>Lunes a Viernes: 8:00 AM - 12:30 PM</p>
-							</div>
+							<!-- Fin del Sub-acordeón -->
 						</div>
 					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingFour">
+						<h5 class="mb-0">
+							<button class="btn btn-link" data-toggle="collapse" data-target="#collapsemedia"
+								aria-expanded="true" aria-controls="collapsemedia">
+								Media Academica
+							</button>
+						</h5>
+					</div>
+					<div id="collapsemedia" class="collapse" aria-labelledby="headingFour" data-parent="#accordion2">
+						<div class="card-body">
+							<!-- Sub-acordeón -->
+							<div id="subAccordion1">
+								<div class="card">
+									<div class="card-header" id="subHeadingOne">
+										<h5 class="mb-0">
+											<button class="btn btn-link" data-toggle="collapse"
+												data-target="#subCollapseOne" aria-expanded="true"
+												aria-controls="subCollapseOne">
+												Grado Decimo 10°
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseOne" class="collapse" aria-labelledby="subHeadingOne"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<table class="table table-striped table-bordered">
+												<tr>
+													<td></td>
+													<td>Lu</td>
+													<td>Ma</td>
+													<td>Mi</td>
+													<td>Ju</td>
+													<td>Vi</td>
+												</tr>
+												<tr>
+													<td>1<br />7:00 - 7:55</td>
+													<td>Etica - Rel 6</td>
+													<td>Ed. Fisca 6</td>
+													<td>Sociales 6</td>
+													<td>Artistica 6</td>
+													<td>Lectura</td>
+												</tr>
+												<tr>
+													<td>2<br />7:55 - 8:50</td>
+													<td>Lenguaje 6</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+													<td>Lenguaje 6</td>
+													<td>Lenguaje 6</td>
+												</tr>
+												<tr>
+													<td>3<br />8:50 - 9:45</td>
+													<td>Sociales 6</td>
+													<td>Matematicas 6</td>
+													<td>Lectura</td>
+													<td>Biologia 6</td>
+													<td>Matematicas 6</td>
+												</tr>
+												<tr>
+													<td>R<br />9:45 - 10:15</td>
+													<td></td>
+													<td></td>
+													<td>Descanso</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4<br />10:15 - 11:10</td>
+													<td>Matematicas 6</td>
+													<td>Biologia 6</td>
+													<td>Lectura</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+												</tr>
+												<tr>
+													<td>5<br />11:10 - 12:05</td>
+													<td>Lectura</td>
+													<td>Lectura</td>
+													<td>Lenguaje 6</td>
+													<td>Matematicas 6</td>
+													<td>Ed. Fisca 6</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="subHeadingTwo">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" data-toggle="collapse"
+												data-target="#subCollapseTwo" aria-expanded="false"
+												aria-controls="subCollapseTwo">
+												Grado Once 11°
+											</button>
+										</h5>
+									</div>
+									<div id="subCollapseTwo" class="collapse" aria-labelledby="subHeadingTwo"
+										data-parent="#subAccordion1">
+										<div class="card-body">
+											<table class="table table-striped table-bordered">
+												<tr>
+													<td></td>
+													<td>Lu</td>
+													<td>Ma</td>
+													<td>Mi</td>
+													<td>Ju</td>
+													<td>Vi</td>
+												</tr>
+												<tr>
+													<td>1<br />7:00 - 7:55</td>
+													<td>Etica - Rel 6</td>
+													<td>Ed. Fisca 6</td>
+													<td>Sociales 6</td>
+													<td>Artistica 6</td>
+													<td>Lectura</td>
+												</tr>
+												<tr>
+													<td>2<br />7:55 - 8:50</td>
+													<td>Lenguaje 6</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+													<td>Lenguaje 6</td>
+													<td>Lenguaje 6</td>
+												</tr>
+												<tr>
+													<td>3<br />8:50 - 9:45</td>
+													<td>Sociales 6</td>
+													<td>Matematicas 6</td>
+													<td>Lectura</td>
+													<td>Biologia 6</td>
+													<td>Matematicas 6</td>
+												</tr>
+												<tr>
+													<td>R<br />9:45 - 10:15</td>
+													<td></td>
+													<td></td>
+													<td>Descanso</td>
+													<td></td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>4<br />10:15 - 11:10</td>
+													<td>Matematicas 6</td>
+													<td>Biologia 6</td>
+													<td>Lectura</td>
+													<td>Sociales 6</td>
+													<td>Biologia 6</td>
+												</tr>
+												<tr>
+													<td>5<br />11:10 - 12:05</td>
+													<td>Lectura</td>
+													<td>Lectura</td>
+													<td>Lenguaje 6</td>
+													<td>Matematicas 6</td>
+													<td>Ed. Fisca 6</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Fin del Sub-acordeón -->
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<!-- Repite la estructura para los demás items del acordeón -->
 				</div>
 			</div>
 		</div>
 	</section>
-
+<br>
+<br>
 
 
 	<footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -368,6 +1069,15 @@
 		</svg></div>
 
 
+		<script>
+			$(document).ready(function(){
+			  $('[data-toggle="tooltip"]').tooltip();   
+			});
+
+			function mostrarMensaje() {
+      alert("¡Este dia es el día del maestro!");
+    }
+		  </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
